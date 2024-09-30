@@ -1,6 +1,7 @@
 import React from 'react'
 import Topbar from './components/topbar/Topbar'
 import Sidebar from './components/sidebar/Sidebar'
+
 import "./app.css"
 
 export default function App() {
@@ -9,6 +10,8 @@ export default function App() {
       <Topbar/>
       <div className='container'>
           <Sidebar/>
+          <Home/>
+           <div className='others'>Othe pages</div>
       </div>
     </div>
   )
