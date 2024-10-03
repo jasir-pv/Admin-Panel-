@@ -5,3 +5,59 @@
     box-shadow: -5px 7px 30px -14px rgba(0,0,0,0.5);
     padding: 20px;
 }
+
+.widgetLgTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.widgetLgImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.widgetLgButton{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+
+}
+.widgetLgButtonApproved{
+    background-color: rgb(165, 255, 165);
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+}
+.widgetLgButtonDeclined{
+    background-color: rgb(247, 144, 144);
+    padding: 5px 7px;
+    border-radius: 10px;
+    border: none;
+}
+.widgetLgButtonPending{
+    background-color: rgb(145, 145, 249);
+    padding: 5px 7px;
+    border-radius: 10px;
+    border: none;
+}
+.widgetLgTable{
+    width: 100%;
+    border-spacing: 20px;
+}
+.widgetLgTh{
+    text-align: left;
+}
+
+.widgetUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.widgetLgDate,.widgetLgAmount{
+    font-weight: 300;
+    color: rgb(79, 77, 77);
+}
