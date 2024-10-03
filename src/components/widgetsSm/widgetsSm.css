@@ -40,12 +40,14 @@
 
 .widgetSmUsername{
     font-weight: 600;
+    font-family: sans-serif;
 
 }
 .widgetSmUserTitle{
     font-weight: 300;
     font-size: 14px;
     color: #555;
+    font-family: sans-serif;
 
 }
 .widgetSmButton{
