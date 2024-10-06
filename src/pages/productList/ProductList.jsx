@@ -1,41 +1,40 @@
-import "./userList.css"
+import "./productList.css"
 import { DeleteOutlineOutlined } from "@mui/icons-material";
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import {Link} from "react-router-dom"
 import { useState } from "react";
-import { userRows } from "../../dummyData";
+import { productRows } from "../../dummyData";
 
+export default function ProductList() {
 
-export default function UserList() {
-
-    const [data, setData] = useState(userRows)
-
+    const [data, setData]  = useState(productRows)
     const handleDelete = (id)=>{
-      setData(data.filter((item)=> item.id !== id))
-    }
+        setData(data.filter((item)=> item.id !== id))
+      }
+  return (
 
     const columns: GridColDef[] = [
         { field: 'id', headerName: 'ID', width: 70 },
-        { field: 'user', headerName: 'User', width: 200 ,
+        { field: 'product', headerName: 'Product', width: 200 ,
             renderCell:(params)=>{
                 return (
                     <div className="userListUser">
-                        <img src={params.row.avatar} alt="Img" className="userListImg" />
-                        {params.row.username}
+                        <img src={params.row.avatar} alt="Img" className="productListImg" />
+                        {params.row.name}
                     </div>
                 )
               
             }
         },
-        { field: 'email', headerName: 'Email', width: 200 },
+        { field: 'stock', headerName: 'Stock', width: 200 },
         {
           field: 'status',
           headerName: 'Status',
           width: 120,
         },
         {
-            field: 'transaction',
-            headerName: 'Transacton Value',
+            field: 'price',
+            headerName: 'Price ',
             width: 160,
           },
           {
@@ -57,11 +56,8 @@ export default function UserList() {
           }
         
       ];
-      
 
-
-  return (
-    <div className="userList">
+    <div className='productList'>
        <DataGrid disableRowSelectionOnClick
         rows={data}
         columns={columns}
@@ -70,7 +66,6 @@ export default function UserList() {
         checkboxSelection
         sx={{ border: 0 }}
       />
-    
     </div>
   )
 }

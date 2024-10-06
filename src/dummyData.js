@@ -63,3 +63,15 @@ export const userData = [
     { id: 9, username: 'Roxie', avatar: 'https://avatars.githubusercontent.com/u/106402545?v=4', email: "jasir@gmail.com", status:"active", transaction:"$120.00" },
   ];
 
+  export const productRows = [
+    { id: 1, username: 'Apple Airpods', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 2, username: 'Keyboard', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 3, username: 'Mouse', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 4, username: 'Hp Laptop', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 5, username: 'Android TV', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 6, username: 'Melisandre', img: "https://avatars.githubusercontent.com/u/106402545?v=4", stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 7, username: 'Clifford', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 8, username: 'Frances', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 9, username: 'Roxie', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+  ];
+
