@@ -11,16 +11,16 @@ export default function ProductList() {
     const handleDelete = (id)=>{
         setData(data.filter((item)=> item.id !== id))
       }
-  return (
 
-    const columns: GridColDef[] = [
+
+      const columns: GridColDef[] = [
         { field: 'id', headerName: 'ID', width: 70 },
         { field: 'product', headerName: 'Product', width: 200 ,
             renderCell:(params)=>{
                 return (
-                    <div className="userListUser">
-                        <img src={params.row.avatar} alt="Img" className="productListImg" />
-                        {params.row.name}
+                    <div className="productListItem">
+                        <img src={params.row.img} alt="Img" className="productListImg" />
+                        {params.row.productName}
                     </div>
                 )
               
@@ -44,20 +44,22 @@ export default function ProductList() {
             renderCell:(params)=>{
                 return(
                      <>
-                     <Link to={"/user/" + params.row.id}>
-                      <button className="userListEdit">Edit</button>
+                     <Link to={"/product/" + params.row.id}>
+                      <button className="productListEdit">Edit</button>
                      </Link>
                     
-                    <DeleteOutlineOutlined className="userListDelete"
+                    <DeleteOutlineOutlined className="product ListDelete"
                       onClick={()=>handleDelete(params.row.id)}     />
                     </>
                 )
             }
           }
         
-      ];
+      ]
+  return (
 
-    <div className='productList'>
+   
+      <div className="productList">
        <DataGrid disableRowSelectionOnClick
         rows={data}
         columns={columns}

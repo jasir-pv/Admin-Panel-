@@ -64,14 +64,37 @@ export const userData = [
   ];
 
   export const productRows = [
-    { id: 1, username: 'Apple Airpods', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 2, username: 'Keyboard', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 3, username: 'Mouse', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 4, username: 'Hp Laptop', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 5, username: 'Android TV', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
-    { id: 6, username: 'Melisandre', img: "https://avatars.githubusercontent.com/u/106402545?v=4", stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
-    { id: 7, username: 'Clifford', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 8, username: 'Frances', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 9, username: 'Roxie', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 2, productName: 'Keyboard', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 3, productName: 'Mouse', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 4, productName: 'Hp Laptop', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 1, productName: 'Apple Airpods', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 5, productName: 'Android TV', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 6, productName: 'Melisandre', img: "https://avatars.githubusercontent.com/u/106402545?v=4", stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 7, productName: 'Clifford', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 8, productName: 'Frances', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 9, productName: 'Roxie', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
   ];
 
+
+
+  export const productData = [
+        
+    {
+      name: 'Feb',
+      "Sales": 1890,
+
+    },
+    {
+      name: 'Mar',
+      "Sales": 2390,
+    },
+    {
+      name: 'Apr',
+      "Sales": 3490,
+    },
+    {
+        name: 'May',
+        "Sales": 2490,
+      },
+     
+  ];
