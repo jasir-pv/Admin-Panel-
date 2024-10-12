@@ -33,7 +33,7 @@ export default function ProductList() {
           width: 120,
         },
         {
-            field: 'price',
+            field: 'transaction',
             headerName: 'Price ',
             width: 160,
           },

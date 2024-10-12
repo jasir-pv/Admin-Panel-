@@ -64,15 +64,15 @@ export const userData = [
   ];
 
   export const productRows = [
-    { id: 2, productName: 'Keyboard', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 3, productName: 'Mouse', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 4, productName: 'Hp Laptop', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 1, productName: 'Apple Airpods', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 5, productName: 'Android TV', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
-    { id: 6, productName: 'Melisandre', img: "https://avatars.githubusercontent.com/u/106402545?v=4", stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
-    { id: 7, productName: 'Clifford', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 8, productName: 'Frances', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
-    { id: 9, productName: 'Roxie', img: 'https://avatars.githubusercontent.com/u/106402545?v=4', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 2, productName: 'Keyboard', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 3, productName: 'Mouse', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 4, productName: 'Hp Laptop', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 1, productName: 'Apple Airpods', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 5, productName: 'Android TV', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 6, productName: 'Melisandre', img: "/images/Apple Airpod.png", stock: "jasir@gmail.com", status:"active", transaction:"$120.00"  },
+    { id: 7, productName: 'Clifford', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 8, productName: 'Frances', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
+    { id: 9, productName: 'Roxie', img: '/images/Apple Airpod.png', stock: "jasir@gmail.com", status:"active", transaction:"$120.00" },
   ];
 
 

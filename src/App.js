@@ -11,15 +11,20 @@ import NewUser from './pages/newUser/NewUser'
 import ProductList from './pages/productList/ProductList'
 import Product from './pages/product/Product'
 import NewProduct from './pages/newProduct/NewProduct'
+import Login from './pages/login/Login'
+
 
 
 export default function App() {
   return (
     <Router>
+         
+
       <Topbar/>
       <div className='container'>
           <Sidebar/>
           <Routes>
+           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/user/:userId" element={<User />} />
@@ -27,8 +32,8 @@ export default function App() {
           <Route path="/products" element={<ProductList />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/newproduct" element={<NewProduct />} />
-
           </Routes>
+
       </div>
     </Router>
   )
