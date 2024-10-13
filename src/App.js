@@ -16,6 +16,10 @@ import Login from './pages/login/Login'
 
 
 export default function App() {
+
+  const admin = JSON.parse(JSON.parse(localStorage.getItem
+    ("persist:root")).user).currentUser.isAdmin
+  
   return (
     <Router>
          

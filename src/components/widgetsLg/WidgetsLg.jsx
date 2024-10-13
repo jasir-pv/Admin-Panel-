@@ -1,6 +1,23 @@
+import { useEffect, useState } from "react"
 import "./widgetsLg.css"
+import { userRequest } from "../../requestMethods"
+import { format } from "timeago.js";
 
 export default function WidgetsLg() {
+
+    const [orders,setOrders] = useState([])
+  
+    useEffect(()=>{
+  const getOrders = async ()=>{
+      try{
+      
+        const res = await userRequest.get("orders")
+        setOrders(res.data)
+      } catch(err) {}
+    }
+    getOrders()
+    },[])
+
 
   const Button = ({type}) =>{
     return <button className={"widgetLgButton" + type}>{type}</button>
@@ -15,45 +32,20 @@ export default function WidgetsLg() {
             <th className="widgetLgTh">Amount</th>
             <th className="widgetLgTh">Stats</th>
           </tr>
-          <tr className="widgetLgTr">
+
+          {orders.map((order)=> (
+            
+          <tr className="widgetLgTr" key={order.id}>
             <td className="widgetUser">
               <img src="https://avatars.githubusercontent.com/u/106402545?v=4" alt="" className="widgetLgImg" />
-              <span className="widgetLgName">Jasir</span>
+              <span className="widgetLgName">{order.useId}</span>
             </td>
-            <td className="widgetLgDate">2 jun 2024</td>
-            <td className="widgetLgAmount">$1022</td>
-            <td className="widgetLgStatus"><Button type="Approved" /></td>
-          </tr>
-         
-          <tr className="widgetLgTr">
-            <td className="widgetUser">
-              <img src="https://avatars.githubusercontent.com/u/106402545?v=4" alt="" className="widgetLgImg" />
-              <span className="widgetLgName">Jasir</span>
-            </td>
-            <td className="widgetLgDate">2 jun 2024</td>
-            <td className="widgetLgAmount">$1022</td>
-            <td className="widgetLgStatus"><Button type="Declined" /></td>
-          </tr>
-         
-          <tr className="widgetLgTr">
-            <td className="widgetUser">
-              <img src="https://avatars.githubusercontent.com/u/106402545?v=4" alt="" className="widgetLgImg" />
-              <span className="widgetLgName">Jasir</span>
-            </td>
-            <td className="widgetLgDate">2 jun 2024</td>
-            <td className="widgetLgAmount">$1022</td>
-            <td className="widgetLgStatus"><Button type="Pending" /></td>
-          </tr>
-         
-          <tr className="widgetLgTr">
-            <td className="widgetUser">
-              <img src="https://avatars.githubusercontent.com/u/106402545?v=4" alt="" className="widgetLgImg" />
-              <span className="widgetLgName">Jasir</span>
-            </td>
-            <td className="widgetLgDate">2 jun 2024</td>
-            <td className="widgetLgAmount">$1022</td>
-            <td className="widgetLgStatus"><Button type="Approved" /></td>
-          </tr>
+            <td className="widgetLgDate">{format(order.createdAt)}</td>
+            <td className="widgetLgAmount">${order.amount}</td>
+            <td className="widgetLgStatus"><Button type={order.status} /></td>
+          </tr>         
+          ))}
+          
         </table>
     </div>
   )
