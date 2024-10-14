@@ -13,13 +13,15 @@
     color: white;
     margin-right: 20px;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
 
 }
 
 .productListDelete{
     color: red;
     cursor: pointer;
-    
+    display: inline-block;
 }
 
 .productListImg{
@@ -33,5 +35,6 @@
 .productListItem{
     display: flex;
     align-items: center;
+
     
 }
